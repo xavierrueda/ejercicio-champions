@@ -1,0 +1,29 @@
+.partido {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+#menuPrincipal {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#vistaCampeonato {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.ronda {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+#ganador {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

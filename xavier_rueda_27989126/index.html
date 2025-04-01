@@ -1,0 +1,31 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <title>tarea de la Champions League</title>
+    <link rel="stylesheet" href="public/css/styles.css"> <!-- pa que quede chulo -->
+</head>
+<body>
+    <h1>¡Champions League!</h1>
+
+    <div id="menuPrincipal"> <!-- menú principal pa empezar -->
+        <h2>Elige tu torneo</h2>
+        <button onclick="mostrarFormulario(8)">Cuartos (8 equipos)</button> 
+        <button onclick="mostrarFormulario(16)">Octavos de final</button>
+        <br> <br> <!-- pa separar un poco -->
+        Equipo: <input type="text" id="nombreEquipo"> <button onclick="agregarEquipo()">¡Añádelo!</button>
+        <br><br>
+        <div id="listaEquipos">Equipos hasta ahora (0/8)</div>
+        <button onclick="iniciarCampeonato()">¡empezar torneo!</button>
+    </div>
+
+    <div id="vistaCampeonato" style="display:none"> <!-- escondido hasta que arranquemos -->
+        <h2>¡El cuadro del torneo!</h2>
+        <div id="partidos"></div> <!-- aquí van los partidos -->
+        <div id="ganador"></div> <!-- sitio pa el campeón -->
+        <button onclick="simularCampeonato()">Jugar ronda</button>
+        <button onclick="resetearVista()">Volver a empezar</button> 
+    </div>
+
+    <script src="public/javascript/scripts.js"></script> <!-- aquí pasa la magia -->
+</body>
+</html>
